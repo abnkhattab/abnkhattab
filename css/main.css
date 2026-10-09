@@ -79,7 +79,7 @@
     display: none;
 }
 
-/* إظهار القائمة عندما يتم تفعيل الـ Checkbox في أي مكان داخل الهيدر */
 header:has(#menu-toggle:checked) .mega-menu {
     display: flex !important;
 }
+
