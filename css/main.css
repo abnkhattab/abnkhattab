@@ -1,0 +1,85 @@
+:root {
+    --brand:#D41E72;
+    --brand-light:#FFD5E8;
+}
+
+.btn {
+    position: relative;
+    /* overflow: hidden; */
+    z-index: 1;
+    transition: color 0.5s ease;
+}
+
+.btn::before,
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--brand);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.btn::before {
+    left: -30px;
+}
+
+.btn::after {
+    right: -30px;
+}
+
+.btn:hover::before {
+    animation: left-fill 0.2s linear forwards;
+}
+
+.btn:hover::after {
+    animation: right-fill 0.2s linear forwards;
+}
+
+.btn:hover {
+    color: #ffffff;
+    border-color: transparent;
+    transition-delay: 0.1s;
+}
+
+@keyframes left-fill {
+    50% {
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+    100% {
+        left: 0;
+        border-radius: 0;
+        width: 51%;
+        height: 100%;
+    }
+}
+
+@keyframes right-fill {
+    50% {
+        right: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+    100% {
+        right: 0;
+        border-radius: 0;
+        width: 51%;
+        height: 100%;
+    }
+}
+
+.mega-menu {
+    display: none;
+}
+
+/* إظهار القائمة عندما يتم تفعيل الـ Checkbox في أي مكان داخل الهيدر */
+header:has(#menu-toggle:checked) .mega-menu {
+    display: flex !important;
+}

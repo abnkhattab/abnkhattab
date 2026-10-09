@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Settings for icons and colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#D41E72',
+                            light: '#FFD5E8',
+                        },
+                        navy: '#335A78',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-[#fff] text-white antialiased">
+    <!-- Start Header -->
+    <header class="relative overflow-hidden min-h-[50vh] bg-cover bg-center bg-no-repeat flex flex-col justify-between pb-16" style="background-image: url('../imgs/serdetimg/servicedetailesheader.png');">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <nav class="flex items-center justify-between py-6">
+                <div class="w-16">
+                    <img src="imgs/LOGO.png" alt="Logo" class="w-full h-auto object-contain">
+                </div>
+
+                <ul class="hidden md:flex items-center gap-7 bg-navy/90 backdrop-blur-md px-8 py-3.5 rounded-full shadow-lg">
+                    <li><a href="index.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Home</a></li>
+                    <li><a href="about.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">About us</a></li>
+                    <li><a href="projects.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Projects</a></li>
+                    <li><a href="services.html" class="text-brand font-semibold text-sm transition-colors hover:text-brand">Services</a></li>
+                    <li><a href="contact.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Contact</a></li>
+                </ul>
+
+                <div class="hidden md:flex items-center gap-2 text-lg font-bold text-white">
+                    <span class="text-brand cursor-pointer">EN</span>
+                    <span class="opacity-60">|</span>
+                    <span class="hover:text-brand cursor-pointer transition-colors">NL</span>
+                </div>
+
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+                <label for="menu-toggle" class="burger-icon md:hidden text-2xl text-gray-800 cursor-pointer select-none p-2">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </nav>
+
+            <!-- Start Megamenu -->
+        <div class="mega-menu flex-col justify-center items-center w-full backdrop-blur-sm rounded-xl min-h-[30vh] bg-white/50 relative gap-4 py-2">
+            <a href="index.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Home</a>
+            <a href="about.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">About us</a>
+            <a href="projects.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Projects</a>
+            <a href="services.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Services</a>
+            <a href="contact.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Contact</a>
+        </div>
+            <!-- header title -->
+            <div class="mt-20 md:mt-28 max-w-xl">
+                <p class="text-white capitalize font-bold hidden md:block">home <i class="fa-solid fa-chevron-right px-1"></i> services<i class="fa-solid fa-chevron-right px-1"></i> construction</p>
+                <h1 class="text-4xl font-black uppercase tracking-tight leading-tight drop-shadow-sm text-white py-8">
+                    new construction
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- About This Services -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="flex flex-col justify-between md:flex-row  gap-12">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-black font-bold text-4xl uppercase mb-6">about this services</h2>
+                    <p class="text-xl text-brand ">Building better from the ground up</p>
+                    <p class="text-base text-gray-700 leading-snug">
+                        Spotlight is your partner for residential installations, we accept
+                        orders, large or small, from both companies and individuals. We
+                        can install, expand and replace installations where necessary.
+                    </p>
+                    <div class="flex flex-col pt-4">
+                        <div class="flex items-center">
+                            <div class="flex items-center justify-center w-6 h-6 bg-brand-light rounded-full mr-2"><i class="text-brand fa-solid fa-check"></i></div>
+                            <div><p class="text-base text-gray-700 leading-loose">Electrical design & planning.</p></div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center justify-center w-6 h-6 bg-brand-light rounded-full mr-2"><i class="text-brand fa-solid fa-check"></i></div>
+                            <div><p class="text-base text-gray-700 leading-loose">Full installation & integration.</p></div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center justify-center w-6 h-6 bg-brand-light rounded-full mr-2"><i class="text-brand fa-solid fa-check"></i></div>
+                            <div><p class="text-base text-gray-700 leading-loose">Smart home & automation ready.</p></div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center justify-center w-6 h-6 bg-brand-light rounded-full mr-2"><i class="text-brand fa-solid fa-check"></i></div>
+                            <div><p class="text-base text-gray-700 leading-loose">Safety testing & certification.</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="imgs/serdetimg/about services.png" alt="" class="h-full p-6 rounded-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <h1 class="text-black font-bold text-4xl uppercase mb-6">before & after</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div class="w-full max-w-sm mx-auto h-auto overflow-hidden shadow-lg rounded-3xl hover:scale-105 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.5)] ">
+                <img src="imgs/serdetimg/before & after.png" alt="b&f Card 1" class="w-full h-auto">
+            </div>
+            <div class="w-full max-w-sm mx-auto h-auto overflow-hidden shadow-lg rounded-3xl hover:scale-105 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.5)] ">
+                <img src="imgs/serdetimg/before & after.png" alt="b&f Card 2" class="w-full h-auto">
+            </div>
+            <div class="w-full max-w-sm mx-auto h-auto overflow-hidden shadow-lg rounded-3xl hover:scale-105 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.5)] ">
+                <img src="imgs/serdetimg/before & after.png" alt="b&f Card 3" class="w-full h-auto">
+            </div>
+        </div>
+        </div>
+        <div class="hidden md:block mt-12 mx-auto w-3/4 h-1.5 rounded-full bg-gradient-to-r from-brand via-brand/60 to-transparent"></div>
+    </section>
+
+
+    <!-- Start join -->
+    <section class="py-16 bg-cover bg-center bg-no-repeat min-h-[30vh]" style="background-image: url('../imgs/srvimg/join.png');">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="w-full md:w-2/3">
+                    <h3 class="font-black text-4xl text-white uppercase py-8">ready to start your pfroject ?</h3>
+                    <p class="font-bold text-white tracking-wide">Let's build something great together.</p>
+                    <p class="font-bold text-white tracking-wide">Our team is ready to bring your ideas to life.</p>
+                </div>
+                <div class="flex justify-between w-full mt-6 md:mt-8 md:flex-col gap-4 mt-0 md:w-1/3">
+                    <a href="tel:+31622331370" class="bg-transparent p-4 border border-white rounded-xl text-center md:w-[260px] md:p-8"><i class="fa-solid fa-phone-volume px-4"></i>M. +31622331370</a>
+                    <a href="#" class="p-4 bg-white text-brand font-bold rounded-xl text-center md:w-[160px] md:p-6">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-gradient-to-t from-black to-brand py-20 px-10 text-white">
+        <div  class="max-w-7xl mx-auto px-6 w-full">
+        <!-- Top Section (3 Columns Layout) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+            <!-- Col 1: Logo & Text -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left md:pr-10 md:border-r border-white/40">
+                <img src="imgs/spotlite.png" alt="Spotlight Logo" class="h-32 w-auto object-contain">
+                <p class="font-normal text-sm md:text-base text-white/90 pt-6 leading-relaxed max-w-sm">
+                    Spotlight delivers advanced electrical, solar, and smart charging solutions for modern projects.
+                </p>
+            </div>
+            <!-- Col 2: Contact Us -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <!-- Title -->
+                <div class="flex items-center gap-3">
+                    <div class="h-9 w-9 rounded-full bg-white flex items-center justify-center shrink-0 shadow">
+                        <i class="fa-solid fa-phone text-[#b0085a] text-sm"></i>
+                    </div>
+                    <h3 class="text-xl font-bold tracking-wide">Contact Us</h3>
+                </div>
+                <!-- Info List -->
+                <div class="flex flex-col gap-3 text-sm text-white/90">
+                <div class="flex items-start gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-location-dot mt-1 w-4 text-center"></i>
+                    <div>
+                    <p>Korte Brugstraat</p>
+                    <p>4871 XT Etten-Leur</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-phone-volume w-4 text-center"></i>
+                    <a href="tel:+31622331370" class="hover:underline">M. +31622331370</a>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-envelope w-4 text-center"></i>
+                    <a href="mailto:info@spotlightelektrotechniek.nl" class="hover:underline">E. info@spotlightelektrotechniek.nl</a>
+                </div>
+                </div>
+                <!-- Button: Get in touch -->
+                <a href="#contact" class="mt-2 inline-flex items-center gap-4 border border-white/40 hover:border-white rounded-full py-2 px-5 transition duration-300 group">
+                <span class="text-sm font-semibold">Get in touch</span>
+                <div class="h-7 w-7 rounded-full bg-white flex items-center justify-center text-[#b0085a] group-hover:translate-x-1 transition-transform">
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </div>
+                </a>
+            </div>
+            <!-- Col 3: Company Links -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <!-- Title -->
+                <div class="flex items-center gap-3">
+                <div class="h-9 w-9 rounded-full bg-white flex items-center justify-center shrink-0 shadow">
+                    <i class="fa-solid fa-link text-[#b0085a] text-sm"></i>
+                </div>
+                <h3 class="text-xl font-bold tracking-wide">Company Links</h3>
+                </div>
+                <!-- Links List -->
+                <div class="flex flex-col gap-2.5 text-sm font-medium">
+                <a href="index.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Home</span>
+                </a>
+                <a href="about.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>About us</span>
+                </a>
+                <a href="projects.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="services.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Services</span>
+                </a>
+                <a href="contact.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Contact</span>
+                </a>
+                </div>
+            </div>
+        </div>
+            <!-- footer bar -->
+            <div class="bg-gradient-to-r from-black/80  to-brand shadow-2xl rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 my-8">
+                <!-- Follow Us -->
+                <div class="flex flex-col items-center md:items-start gap-4 w-full md:w-1/3">
+                    <h4 class="text-lg font-bold">Follow us</h4>
+                    <div class="flex items-center gap-5 text-2xl">
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            <!-- Opening Hours -->
+            <div class="flex flex-col items-center md:items-start gap-3 w-full md:w-2/3 md:pl-6">
+                <div class="flex items-center gap-3">
+                <div class="h-8 w-8 rounded-full bg-white flex items-center justify-center text-[#b0085a] shadow">
+                    <i class="fa-regular fa-clock text-sm"></i>
+                </div>
+                <h4 class="text-lg font-bold">Opening hours</h4>
+                </div>
+                <p class="text-sm text-white/90">
+                Monday to Friday: <strong class="text-white font-semibold">08:00-17:00</strong>
+                </p>
+            </div>
+        </div>
+            <!-- Copyright & Legal Footer -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/70 border-t border-white/10 pt-6">
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-id-card"></i> Chamber of Commerce: <strong>89118308</strong>
+                    </span>
+                    <span>VAT number: <strong>NL864884217B01</strong></span>
+                </div>
+                <div class="text-center">
+                    Chamber of Commerce:89118308 - Publication rights reserved©
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

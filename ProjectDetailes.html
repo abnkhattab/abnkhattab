@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Settings for icons and colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#D41E72',
+                            light: '#FFD5E8',
+                        },
+                        navy: '#335A78',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-[#fff] text-white antialiased">
+    <!-- Start Header -->
+    <header class="relative overflow-hidden  min-h-[40vh] bg-cover bg-center bg-no-repeat flex flex-col justify-between pb-8" style="background-image: url('../imgs/srvimg/services\ header.png');">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent pointer-events-none"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <nav class="flex items-center justify-between py-6">
+                <div class="w-16">
+                    <img src="imgs/LOGO.png" alt="Logo" class="w-full h-auto object-contain">
+                </div>
+
+                <ul class="hidden md:flex items-center gap-7 bg-navy/90 backdrop-blur-md px-8 py-3.5 rounded-full shadow-lg">
+                    <li><a href="index.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Home</a></li>
+                    <li><a href="about.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">About us</a></li>
+                    <li><a href="projects.html" class="text-brand font-semibold text-sm transition-colors hover:text-brand">Projects</a></li>
+                    <li><a href="services.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Services</a></li>
+                    <li><a href="contact.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Contact</a></li>
+                </ul>
+
+                <div class="hidden md:flex items-center gap-2 text-lg font-bold text-white">
+                    <span class="text-brand cursor-pointer">EN</span>
+                    <span class="opacity-60">|</span>
+                    <span class="hover:text-brand cursor-pointer transition-colors">NL</span>
+                </div>
+
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+                <label for="menu-toggle" class="burger-icon md:hidden text-2xl text-gray-800 cursor-pointer select-none p-2">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </nav>
+
+            <!-- Start Megamenu -->
+        <div class="mega-menu flex-col justify-center items-center w-full backdrop-blur-sm rounded-xl min-h-[30vh] bg-white/50 relative gap-4 py-2">
+            <a href="index.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Home</a>
+            <a href="about.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">About us</a>
+            <a href="projects.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Projects</a>
+            <a href="services.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Services</a>
+            <a href="contact.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Contact</a>
+        </div>
+
+            <!-- header title -->
+            <div class="mt-20 md:mt-28 max-w-xl">
+                <p class="text-white capitalize font-bold hidden md:block">home <i class="fa-solid fa-chevron-right px-1"></i> services <i class="fa-solid fa-chevron-right px-1"></i> Modern Villa - Breda</p>
+                <h1 class="text-4xl font-black uppercase tracking-tight leading-tight drop-shadow-sm text-white py-8">
+                    modern villa _ breda
+                </h1>
+                <p class="text-white capitalize font-normal">A luxury new-build villa equipped with advanced electrical</p>
+                <p class="text-white capitalize font-normal">systems for maximum comfort, safety and energy efficiency.</p>
+            </div>
+            <!-- header ending cards -->
+            <div class="flex flex-col md:flex-row pt-8">
+                <!-- first card -->
+                <div class="flex flex-row gap-2 p-3 pl-0 rounded-xl">
+                    <div class="w-12 h-12 rounded-xl bg-transparent flex items-center justify-center text-brand text-xl shrink-0">
+                        <i class="fa-solid fa-location-dot text-2xl"></i>
+                    </div>
+                    <div>
+                        <strong class="text-xl font-black block leading-tight">Breda , Netherlands</strong>
+                        <p class="text-sm text-gray-500 font-medium">Location</p>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="flex flex-row gap-2 p-3 rounded-xl">
+                    <div class="w-12 h-12 rounded-xl bg-transparent flex items-center justify-center text-brand text-xl shrink-0">
+                        <i class="fa-regular fa-calendar-days font-black text-2xl"></i>
+                    </div>
+                    <div>
+                        <strong class="text-xl font-black block leading-tight">2026</strong>
+                        <p class="text-sm text-gray-500 font-medium">Projects Completed</p>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="flex flex-row gap-2 p-3 rounded-xl">
+                    <div class="w-12 h-12 rounded-xl bg-transparent flex items-center justify-center text-brand text-xl shrink-0">
+                        <i class="fa-solid fa-building font-black text-2xl"></i>
+                    </div>
+                    <div>
+                        <strong class="text-xl font-black block leading-tight">New Construction</strong>
+                        <p class="text-sm text-gray-500 font-medium">Project Type</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <!-- Start Footer -->
+    <footer class="bg-gradient-to-t from-black to-brand py-20 px-10 text-white">
+        <div  class="max-w-7xl mx-auto px-6 w-full">
+        <!-- Top Section (3 Columns Layout) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+            <!-- Col 1: Logo & Text -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left md:pr-10 md:border-r border-white/40">
+                <img src="imgs/spotlite.png" alt="Spotlight Logo" class="h-32 w-auto object-contain">
+                <p class="font-normal text-sm md:text-base text-white/90 pt-6 leading-relaxed max-w-sm">
+                    Spotlight delivers advanced electrical, solar, and smart charging solutions for modern projects.
+                </p>
+            </div>
+            <!-- Col 2: Contact Us -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <!-- Title -->
+                <div class="flex items-center gap-3">
+                    <div class="h-9 w-9 rounded-full bg-white flex items-center justify-center shrink-0 shadow">
+                        <i class="fa-solid fa-phone text-[#b0085a] text-sm"></i>
+                    </div>
+                    <h3 class="text-xl font-bold tracking-wide">Contact Us</h3>
+                </div>
+                <!-- Info List -->
+                <div class="flex flex-col gap-3 text-sm text-white/90">
+                <div class="flex items-start gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-location-dot mt-1 w-4 text-center"></i>
+                    <div>
+                    <p>Korte Brugstraat</p>
+                    <p>4871 XT Etten-Leur</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-phone-volume w-4 text-center"></i>
+                    <a href="tel:+31622331370" class="hover:underline">M. +31622331370</a>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-envelope w-4 text-center"></i>
+                    <a href="mailto:info@spotlightelektrotechniek.nl" class="hover:underline">E. info@spotlightelektrotechniek.nl</a>
+                </div>
+                </div>
+                <!-- Button: Get in touch -->
+                <a href="#contact" class="mt-2 inline-flex items-center gap-4 border border-white/40 hover:border-white rounded-full py-2 px-5 transition duration-300 group">
+                <span class="text-sm font-semibold">Get in touch</span>
+                <div class="h-7 w-7 rounded-full bg-white flex items-center justify-center text-[#b0085a] group-hover:translate-x-1 transition-transform">
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </div>
+                </a>
+            </div>
+            <!-- Col 3: Company Links -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <!-- Title -->
+                <div class="flex items-center gap-3">
+                <div class="h-9 w-9 rounded-full bg-white flex items-center justify-center shrink-0 shadow">
+                    <i class="fa-solid fa-link text-[#b0085a] text-sm"></i>
+                </div>
+                <h3 class="text-xl font-bold tracking-wide">Company Links</h3>
+                </div>
+                <!-- Links List -->
+                <div class="flex flex-col gap-2.5 text-sm font-medium">
+                <a href="index.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Home</span>
+                </a>
+                <a href="about.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>About us</span>
+                </a>
+                <a href="projects.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="services.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Services</span>
+                </a>
+                <a href="contact.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Contact</span>
+                </a>
+                </div>
+            </div>
+        </div>
+            <!-- footer bar -->
+            <div class="bg-gradient-to-r from-black/80  to-brand shadow-2xl rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 my-8">
+                <!-- Follow Us -->
+                <div class="flex flex-col items-center md:items-start gap-4 w-full md:w-1/3">
+                    <h4 class="text-lg font-bold">Follow us</h4>
+                    <div class="flex items-center gap-5 text-2xl">
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            <!-- Opening Hours -->
+            <div class="flex flex-col items-center md:items-start gap-3 w-full md:w-2/3 md:pl-6">
+                <div class="flex items-center gap-3">
+                <div class="h-8 w-8 rounded-full bg-white flex items-center justify-center text-[#b0085a] shadow">
+                    <i class="fa-regular fa-clock text-sm"></i>
+                </div>
+                <h4 class="text-lg font-bold">Opening hours</h4>
+                </div>
+                <p class="text-sm text-white/90">
+                Monday to Friday: <strong class="text-white font-semibold">08:00-17:00</strong>
+                </p>
+            </div>
+        </div>
+            <!-- Copyright & Legal Footer -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/70 border-t border-white/10 pt-6">
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-id-card"></i> Chamber of Commerce: <strong>89118308</strong>
+                    </span>
+                    <span>VAT number: <strong>NL864884217B01</strong></span>
+                </div>
+                <div class="text-center">
+                    Chamber of Commerce:89118308 - Publication rights reserved©
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

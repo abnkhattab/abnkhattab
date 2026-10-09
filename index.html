@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#D41E72',
+                            light: '#FFD5E8',
+                        },
+                        navy: '#335A78',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="services.html">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="font-inter bg-[#fafafa] text-gray-900 antialiased selection:bg-brand selection:text-white">
+
+    <!-- 1. Hero Section -->
+    <header class="relative overflow-hidden min-h-[100vh] bg-cover bg-center bg-no-repeat flex flex-col justify-between pb-16" style="background-image: url('imgs/Header BG.png');">
+        <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/40 to-transparent pointer-events-none"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <!-- Navbar -->
+            <nav class="flex items-center justify-between py-6">
+                <!-- Logo -->
+                <div class="w-16">
+                    <img src="imgs/LOGO.png" alt="Logo" class="w-full h-auto object-contain">
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <ul class="hidden md:flex items-center gap-7 bg-navy/90 backdrop-blur-md px-8 py-3.5 rounded-full shadow-lg">
+                    <li><a href="index.html" class="text-brand font-semibold text-sm transition-colors hover:text-brand">Home</a></li>
+                    <li><a href="about.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">About us</a></li>
+                    <li><a href="projects.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Projects</a></li>
+                    <li><a href="services.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Services</a></li>
+                    <li><a href="contact.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Contact</a></li>
+                </ul>
+
+                <!-- Language Switcher -->
+                <div class="hidden md:flex items-center gap-2 text-lg font-bold text-white">
+                    <span class="text-brand cursor-pointer">EN</span>
+                    <span class="opacity-60">|</span>
+                    <span class="hover:text-brand cursor-pointer transition-colors">NL</span>
+                </div>
+
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+                <label for="menu-toggle" class="burger-icon md:hidden text-2xl text-gray-800 cursor-pointer select-none p-2">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </nav>
+
+            <!-- Start Megamenu -->
+        <div class="mega-menu flex-col justify-center items-center w-full backdrop-blur-sm rounded-xl min-h-[30vh] bg-white/50 relative gap-4 py-2">
+            <a href="index.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Home</a>
+            <a href="about.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">About us</a>
+            <a href="projects.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Projects</a>
+            <a href="services.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Services</a>
+            <a href="contact.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Contact</a>
+        </div>
+
+            <!-- Hero Headline & CTA -->
+            <div class="mt-20 md:mt-28 max-w-xl ">
+                <h1 class="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight drop-shadow-sm text-black pb-4">
+                    Working together <br>
+                </h1>
+                <span class="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight drop-shadow-sm text-black pb-4">building success.</span>
+                <div class="mt-8">
+                    <a href="#" class="inline-block bg-brand hover:bg-[#b81460] text-white font-bold text-base px-8 py-4 rounded-2xl shadow-md transition-transform duration-200 hover:-translate-y-0.5">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Group Showcase with Floating Badges -->
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <div class="relative max-w-4xl mx-auto flex flex-col gap-12">
+            <!-- Large Image (Hidden on small screens, badges stacked instead) -->
+            <video src="imgs/laptop.mp4" alt="House Video Showcase" controls autoplay muted loop poster="imgs/Group.png" class="hidden md:block w-full h-auto rounded-3xl shadow-xl object-cover"></video>
+            <!-- Floating Badges Container -->
+            <div class="flex flex-col md:block gap-4 items-center">
+                <!-- Badge 1: Experience -->
+                <div class="md:absolute -top-7 -right-8 bg-white rounded-2xl p-3.5 px-5 flex items-center gap-4 shadow-xl border border-gray-100 w-full max-w-xs md:w-auto">
+                    <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center text-brand text-xl shrink-0">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div>
+                        <strong class="text-xl font-bold block leading-tight">+12</strong>
+                        <p class="text-xs text-gray-500 font-medium">Years Experience</p>
+                    </div>
+                </div>
+
+                <!-- Badge 2: Projects -->
+                <div class="md:absolute top-12 -left-8 bg-white rounded-2xl p-3.5 px-5 flex items-center gap-4 shadow-xl border border-gray-100 w-full max-w-xs md:w-auto">
+                    <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center text-brand text-xl shrink-0">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <strong class="text-xl font-bold block leading-tight">+500</strong>
+                        <p class="text-xs text-gray-500 font-medium">Projects Completed</p>
+                    </div>
+                </div>
+
+                <!-- Badge 3: Support -->
+                <div class="md:absolute -bottom-6 -right-6 bg-white rounded-2xl p-3.5 px-5 flex items-center gap-4 shadow-xl border border-gray-100 w-full max-w-xs md:w-auto">
+                    <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center text-brand text-xl shrink-0">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div>
+                        <strong class="text-xl font-bold block leading-tight">24/7</strong>
+                        <p class="text-xs text-gray-500 font-medium">Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Smart Security & Features Grid -->
+    <section class="py-16 max-w-7xl mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+            <!-- Text Info -->
+            <div class="max-w-md text-center lg:text-left">
+                <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tight leading-snug">
+                    Smart security for homes & businesses
+                </h2>
+                <p class="text-gray-500 text-sm md:text-base mt-4 leading-relaxed">
+                    Smart security and automation for homes and businesses.
+                </p>
+            </div>
+
+            <!-- Features 2x2 Grid -->
+            <div class="grid grid-cols-2 gap-4 md:gap-6 w-full sm:w-auto">
+                <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 flex flex-col gap-4 w-40 md:w-44 transition-all">
+                    <div class="w-11 h-11 rounded-xl bg-brand-light text-brand flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <p class="text-sm font-semibold capitalize text-gray-800">Smart monitoring</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 flex flex-col gap-4 w-40 md:w-44 transition-all">
+                    <div class="w-11 h-11 rounded-xl bg-brand-light text-brand flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <p class="text-sm font-semibold capitalize text-gray-800">Access control</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 flex flex-col gap-4 w-40 md:w-44 transition-all">
+                    <div class="w-11 h-11 rounded-xl bg-brand-light text-brand flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-house-signal"></i>
+                    </div>
+                    <p class="text-sm font-semibold capitalize text-gray-800">Home automation</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 flex flex-col gap-4 w-40 md:w-44 transition-all">
+                    <div class="w-11 h-11 rounded-xl bg-brand-light text-brand flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <p class="text-sm font-semibold capitalize text-gray-800">Remote management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Video Showcase Section -->
+    <section class="py-12 max-w-7xl mx-auto px-6">
+        <!-- 3-Column Video Card Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div class="overflow-hidden rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                <img src="imgs/retangle.png" alt="Video Card 1" class="w-full h-auto object-cover rounded-3xl">
+            </div>
+            <div class="overflow-hidden rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                <img src="imgs/retangle.png" alt="Video Card 2" class="w-full h-auto object-cover rounded-3xl">
+            </div>
+            <div class="overflow-hidden rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                <img src="imgs/retangle.png" alt="Video Card 3" class="w-full h-auto object-cover rounded-3xl">
+            </div>
+        </div>
+
+        <!-- Gradient Progress Indicator (Desktop only) -->
+        <div class="hidden md:block mt-12 mx-auto w-3/4 h-1.5 rounded-full bg-gradient-to-r from-brand via-brand/60 to-transparent"></div>
+
+        <!-- Mobile "View More" Button -->
+        <div class="mt-8 text-center md:hidden">
+            <a href="#" class="inline-block bg-brand text-white font-bold px-10 py-3.5 rounded-full shadow-md text-sm">
+                View more
+            </a>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="py-16 mx-auto px-6 max-w-7xl">
+        <div class="w-full md:w-1/3 text-center">
+            <h3 class="uppercase font-black text-4xl leading-snug">our services</h3>
+            <p class="text-gray-500 text-base ">smart security and automation for homes and businesses</p>
+        </div>
+        <div class="flex flex-col md:grid grid-cols-3 gap-4 lg:gap-8">
+            <div class="flex flex-col gap-6">
+                <div class="py-5 shadow-lg rounded-xl border-l-2 border-brand px-4">
+                    <i class="fa-solid fa-house-chimney-crack bg-brand-light px-4 py-3 text-center rounded-xl text-brand text-2xl"></i>
+                    <h3 class="text-black text-2xl font-bold capitalize my-3">new construction</h3>
+                    <p class="text-gray-500 text-base">Electrical solutions for residential and commercial new-build projects</p>
+                </div>
+                <div class="py-5 shadow-lg rounded-xl border-l-2 border-brand px-4">
+                    <i class="fa-solid fa-solar-panel bg-brand-light px-4 py-3 text-center rounded-xl text-brand text-2xl"></i>
+                    <h3 class="text-black text-2xl font-bold capitalize my-3">charging station</h3>
+                    <p class="text-gray-500 text-base">Professional EV charging solutions for homes and businesses.</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6">
+                <div class="py-5 shadow-lg rounded-xl border-l-2 border-brand px-4">
+                    <i class="fa-solid fa-trowel-bricks bg-brand-light px-4 py-3 text-center rounded-xl text-brand text-2xl"></i>
+                    <h3 class="text-black text-2xl font-bold capitalize my-3">renovation</h3>
+                    <p class="text-gray-500 text-base">Modernizing and upgrading electrical systems for existing properties</p>
+                </div>
+                <div class="py-5 shadow-lg rounded-xl border-l-2 border-brand px-4">
+                    <i class="fa-solid fa-charging-station bg-brand-light px-4 py-3 text-center rounded-xl text-brand text-2xl"></i>
+                    <h3 class="text-black text-2xl font-bold capitalize my-3">solar pannels</h3>
+                    <p class="text-gray-500 text-base">Sustainable solar energy systems designed for long-term efficiency.</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6">
+                <div class="py-4 shadow-xl rounded-xl px-8 h-full text-center flex flex-col justify-center items-center">
+                    <img src="imgs/slazzer.png" alt="" class="py-4">
+                    <h3 class="text-black text-2xl font-bold capitalize my-6">view all services</h3>
+                    <p class="text-gray-500 text-base mb-8">From energy support to complete installation discoevr all our services</p>
+                    <div class="flex items-center gap-1 text-brand text-base drop-shadow font-bold">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="py-16  bg-[url('imgs/team.png')] bg-cover bg-center bg-no-repeat object-cover">
+        <div class="flex flex-col md:flex-row items-center justify-between py-4 mx-auto px-12 max-w-7xl">
+            <div class="w-full md:w-1/2 h-full">
+                <h3 class="text-white font-black uppercase text-4xl mb-6 m-0">join our team</h3>
+                <p class="text-white text-base capitalize">build innovative electrical solutions with a team that value quality, craftsmanship and growth</p>
+                <ul class="pl-8 my-4 capitalize">
+                    <li class="list-disc text-white text-base font-normal">electrican.</li>
+                    <li class="list-disc text-white text-base font-normal">electrical engineer.</li>
+                    <li class="list-disc text-white text-base font-normal">solar installation technical.</li>
+                    <li class="list-disc text-white text-base font-normal">aotumation & control specialist.</li>
+                    <li class="list-disc text-white text-base font-normal">site supervisor.</li>
+                </ul>
+                <p class="text-white text-base capitalize">we are always open to talent, send us an open application</p>
+                <button class="rounded-xl bg-white py-3 px-6 my-6 text-brand font-bold">Connect</button>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="imgs/Frame.png" alt="" class="rounded-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="bg-white py-32 overflow-hidden">
+        <div class="flex flex-col max-w-7xl mx-auto px-6">
+            <div>
+                <h3 class="text-black font-black uppercase text-2xl mb-6 text-center md:text-4xl">our businesses partners</h3>
+            </div>
+            <div class="flex flex-col md:flex-row flex-wrap justify-between items-center gap-6">
+                <img class="max-w-[200px] md:max-w-[28%] w-auto h-auto object-contain" src="imgs/partner 3.png" alt="">
+                <img class="max-w-[200px] md:max-w-[28%] w-auto h-auto object-contain" src="imgs/partner 1.png" alt="">
+                <img class="max-w-[200px] md:max-w-[28%] w-auto h-auto object-contain" src="imgs/partner 2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-gradient-to-t from-black to-brand py-20 px-10 text-white">
+        <div  class="max-w-7xl mx-auto px-6 w-full">
+        <!-- Top Section (3 Columns Layout) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+            <!-- Col 1: Logo & Text -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left md:pr-10 md:border-r border-white/40">
+                <img src="imgs/spotlite.png" alt="Spotlight Logo" class="h-32 w-auto object-contain">
+                <p class="font-normal text-sm md:text-base text-white/90 pt-6 leading-relaxed max-w-sm">
+                    Spotlight delivers advanced electrical, solar, and smart charging solutions for modern projects.
+                </p>
+            </div>
+            <!-- Col 2: Contact Us -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <!-- Title -->
+                <div class="flex items-center gap-3">
+                    <div class="h-9 w-9 rounded-full bg-white flex items-center justify-center shrink-0 shadow">
+                        <i class="fa-solid fa-phone text-[#b0085a] text-sm"></i>
+                    </div>
+                    <h3 class="text-xl font-bold tracking-wide">Contact Us</h3>
+                </div>
+                <!-- Info List -->
+                <div class="flex flex-col gap-3 text-sm text-white/90">
+                <div class="flex items-start gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-location-dot mt-1 w-4 text-center"></i>
+                    <div>
+                    <p>Korte Brugstraat</p>
+                    <p>4871 XT Etten-Leur</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-phone-volume w-4 text-center"></i>
+                    <a href="tel:+31622331370" class="hover:underline">M. +31622331370</a>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-envelope w-4 text-center"></i>
+                    <a href="mailto:info@spotlightelektrotechniek.nl" class="hover:underline">E. info@spotlightelektrotechniek.nl</a>
+                </div>
+                </div>
+                <!-- Button: Get in touch -->
+                <a href="#contact" class="mt-2 inline-flex items-center gap-4 border border-white/40 hover:border-white rounded-full py-2 px-5 transition duration-300 group">
+                <span class="text-sm font-semibold">Get in touch</span>
+                <div class="h-7 w-7 rounded-full bg-white flex items-center justify-center text-[#b0085a] group-hover:translate-x-1 transition-transform">
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </div>
+                </a>
+            </div>
+            <!-- Col 3: Company Links -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <!-- Title -->
+                <div class="flex items-center gap-3">
+                <div class="h-9 w-9 rounded-full bg-white flex items-center justify-center shrink-0 shadow">
+                    <i class="fa-solid fa-link text-[#b0085a] text-sm"></i>
+                </div>
+                <h3 class="text-xl font-bold tracking-wide">Company Links</h3>
+                </div>
+                <!-- Links List -->
+                <div class="flex flex-col gap-2.5 text-sm font-medium">
+                <a href="index.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Home</span>
+                </a>
+                <a href="about.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>About us</span>
+                </a>
+                <a href="projects.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="services.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Services</span>
+                </a>
+                <a href="contact.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Contact</span>
+                </a>
+                </div>
+            </div>
+        </div>
+            <!-- footer bar -->
+            <div class="bg-gradient-to-r from-black/80  to-brand shadow-2xl rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 my-8">
+                <!-- Follow Us -->
+                <div class="flex flex-col items-center md:items-start gap-4 w-full md:w-1/3">
+                    <h4 class="text-lg font-bold">Follow us</h4>
+                    <div class="flex items-center gap-5 text-2xl">
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            <!-- Opening Hours -->
+            <div class="flex flex-col items-center md:items-start gap-3 w-full md:w-2/3 md:pl-6">
+                <div class="flex items-center gap-3">
+                <div class="h-8 w-8 rounded-full bg-white flex items-center justify-center text-[#b0085a] shadow">
+                    <i class="fa-regular fa-clock text-sm"></i>
+                </div>
+                <h4 class="text-lg font-bold">Opening hours</h4>
+                </div>
+                <p class="text-sm text-white/90">
+                Monday to Friday: <strong class="text-white font-semibold">08:00-17:00</strong>
+                </p>
+            </div>
+        </div>
+            <!-- Copyright & Legal Footer -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/70 border-t border-white/10 pt-6">
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-id-card"></i> Chamber of Commerce: <strong>89118308</strong>
+                    </span>
+                    <span>VAT number: <strong>NL864884217B01</strong></span>
+                </div>
+                <div class="text-center">
+                    Chamber of Commerce:89118308 - Publication rights reserved©
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

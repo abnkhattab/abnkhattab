@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Settings for icons and colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#D41E72',
+                            light: '#FFD5E8',
+                        },
+                        navy: '#335A78',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-[#fff] text-white antialiased">
+    <!-- Start Header -->
+    <header class="relative overflow-hidden min-h-[50vh] bg-cover bg-center bg-no-repeat flex flex-col justify-between pb-16" style="background-image: url('../imgs/aboutimg/about header.png');">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent pointer-events-none"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <nav class="flex items-center justify-between py-6">
+                <div class="w-16">
+                    <img src="imgs/LOGO.png" alt="Logo" class="w-full h-auto object-contain">
+                </div>
+
+                <ul class="hidden md:flex items-center gap-7 bg-navy/90 backdrop-blur-md px-8 py-3.5 rounded-full shadow-lg">
+                    <li><a href="index.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Home</a></li>
+                    <li><a href="about.html" class="text-brand font-semibold text-sm transition-colors hover:text-brand">About us</a></li>
+                    <li><a href="projects.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Projects</a></li>
+                    <li><a href="services.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Services</a></li>
+                    <li><a href="contact.html" class="text-white font-semibold text-sm transition-colors hover:text-brand">Contact</a></li>
+                </ul>
+
+                <div class="hidden md:flex items-center gap-2 text-lg font-bold text-white">
+                    <span class="text-brand cursor-pointer">EN</span>
+                    <span class="opacity-60">|</span>
+                    <span class="hover:text-brand cursor-pointer transition-colors">NL</span>
+                </div>
+
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+                <label for="menu-toggle" class="burger-icon md:hidden text-2xl text-gray-800 cursor-pointer select-none p-2">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </nav>
+
+            <!-- Start Megamenu -->
+        <div class="mega-menu flex-col justify-center items-center w-full backdrop-blur-sm rounded-xl min-h-[30vh] bg-white/50 relative gap-4 py-2">
+            <a href="index.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Home</a>
+            <a href="about.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">About us</a>
+            <a href="projects.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Projects</a>
+            <a href="services.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Services</a>
+            <a href="contact.html" class="text-2xl text-brand font-bold leading-loose border-2 border-brand pb-1 py-2 px-8 rounded-lg btn">Contact</a>
+        </div>
+
+            <!-- header title -->
+            <div class="mt-20 md:mt-28 max-w-xl">
+                <p class="text-white capitalize font-bold hidden md:block">home <i class="fa-solid fa-chevron-right px-1"></i> about us</p>
+                <h1 class="text-4xl font-black uppercase tracking-tight leading-tight drop-shadow-sm text-white py-8">
+                    about us
+                </h1>
+                <div class="flex flex-col gap-4">
+                    <p class="text-white capitalize font-normal">Premium, future-ready electrical solutions driving safety and innovation for all residential, commercial, and industrial projects.</p>
+                    <a href="contact.html" class="p-4 bg-brand text-white font-normal rounded-lg text-center w-[160px] md:p-4">contact us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Story -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="flex flex-col justify-between md:flex-row  gap-12">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-black font-bold text-4xl uppercase mb-6">our story</h2>
+                    <p class="text-xl text-brand ">Rooted in Local Quality, Trusted Across the Region.</p>
+                    <p class="text-base text-gray-700 leading-sung">
+                        Spotlight Elektrotechniek was founded with a clear vision: to provide high-quality electrical solutions with honesty,
+                        precision and dedication. What started as a small team has grown into a trusted partner for hundreds of clients across
+                        the Netherlands.
+                    </p>
+                    <br>
+                    <p class="text-base text-gray-700 leading-sung">
+                        We combine technical expertise with modern technology to deliver future-ready solutions.
+                        Every project we take on is a step toward building long-term relationships and powering a smarter tomorrow.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="imgs/aboutimg/about story.png" alt="" class="h-full p-6 rounded-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Clients Choose Spotlight -->
+    <section class="pb-16">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Card -->
+                <div class="flex flex-col items-center text-center w-full max-w-sm mx-auto h-auto overflow-hidden shadow-sm p-4 rounded-xl hover:scale-103 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.1)] ">
+                    <div class="flex justify-center items-center text-center shrink-0 w-16 h-16 rounded-lg bg-brand-light ">
+                        <i class="fa-solid fa-award text-brand text-4xl"></i>
+                    </div>  
+                    <h3 class="font-black text-black text-2xl mt-4 capitalize">Quality</h3>
+                    <p class="text-base text-gray-500 py-2">We deliver top-quality electrical workmanship with attention to every detail.</p>
+                </div>
+                <!-- Card -->
+                <div class="flex flex-col items-center text-center w-full max-w-sm mx-auto h-auto overflow-hidden shadow-sm p-4 rounded-xl hover:scale-103 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.1)] ">
+                    <div class="flex justify-center items-center text-center shrink-0 w-16 h-16 rounded-lg bg-brand-light ">
+                        <i class="fa-solid fa-shield-halved text-brand text-4xl"></i>
+                    </div>  
+                    <h3 class="font-black text-black text-2xl mt-4 capitalize">raliability</h3>
+                    <p class="text-base text-gray-500 py-2">We respect deadlines and ensure every project is completed on time.</p>
+                </div>
+                <!-- Card -->
+                <div class="flex flex-col items-center text-center w-full max-w-sm mx-auto h-auto overflow-hidden shadow-sm p-4 rounded-xl hover:scale-103 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.1)] ">
+                    <div class="flex justify-center items-center text-center shrink-0 w-16 h-16 rounded-lg bg-brand-light ">
+                        <i class="fa-regular fa-lightbulb text-brand text-4xl"></i>
+                    </div>  
+                    <h3 class="font-black text-black text-2xl mt-4 capitalize">innovation</h3>
+                    <p class="text-base text-gray-500 py-2">We use modern technology and smart solutions for a better future.</p>
+                </div>
+                <!-- Card -->
+                <div class="flex flex-col items-center text-center w-full max-w-sm mx-auto h-auto overflow-hidden shadow-sm p-4 rounded-xl hover:scale-103 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.1)] ">
+                    <div class="flex justify-center items-center text-center shrink-0 w-16 h-16 rounded-lg bg-brand-light ">
+                        <i class="fa-regular fa-circle-question text-brand text-4xl"></i>
+                    </div>  
+                    <h3 class="font-black text-black text-2xl mt-4 capitalize">suooprt</h3>
+                    <p class="text-base text-gray-500 py-2">Our team is available 24/7 to support you when you need us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="pb-16">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <h2 class="text-black font-bold text-4xl uppercase mb-6">meet our team</h2>
+            <p class="text-xl text-gray-600 capitalize pb-4">the people behind spotligth.</p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Staff -->
+                <div class="flex flex-col items-center text-center w-full max-w-sm mx-auto h-auto overflow-hidden shadow-lg p-4 rounded-xl hover:scale-105 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.1)] ">
+                    <img src="imgs/aboutimg/team  (1).png" alt=""> 
+                    <h3 class="font-black text-black text-2xl mt-4 capitalize">odai alabasi</h3>
+                    <p class="text-base text-brand/80 py-2 capitalize">founder & team leader</p>
+                </div>
+                <!-- Staff -->
+                <div class="flex flex-col items-center text-center w-full max-w-sm mx-auto h-auto overflow-hidden shadow-lg p-4 rounded-xl hover:scale-105 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.1)] ">
+                    <img src="imgs/aboutimg/team  (3).png" alt=""> 
+                    <h3 class="font-black text-black text-2xl mt-4 capitalize">ahmad ahmad</h3>
+                    <p class="text-base text-brand/80 py-2 capitalize">senior electrician</p>
+                </div>
+                <!-- Staff -->
+                <div class="flex flex-col items-center text-center w-full max-w-sm mx-auto h-auto overflow-hidden shadow-lg p-4 rounded-xl hover:scale-105 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.1)] ">
+                    <img src="imgs/aboutimg/team  (2).png" alt=""> 
+                    <h3 class="font-black text-black text-2xl mt-4 capitalize">houz zakieh</h3>
+                    <p class="text-base text-brand/80 py-2 capitalize">project supervisor</p>
+                </div>
+                <!-- Staff -->
+                <div class="flex flex-col items-center text-center w-full max-w-sm mx-auto h-auto overflow-hidden shadow-lg p-4 rounded-xl hover:scale-105 duration-500 hover:[box-shadow:_0_25px_50px_-12px_rgba(0,0,0,0.1)] ">
+                    <img src="imgs/aboutimg/team  (4).png" alt=""> 
+                    <h3 class="font-black text-black text-2xl mt-4 capitalize">omar batal</h3>
+                    <p class="text-base text-brand/80 py-2 capitalize">smart system spicialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-gradient-to-t from-black to-brand py-20 px-10 text-white">
+        <div  class="max-w-7xl mx-auto px-6 w-full">
+        <!-- Top Section (3 Columns Layout) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+            <!-- Col 1: Logo & Text -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left md:pr-10 md:border-r border-white/40">
+                <img src="imgs/spotlite.png" alt="Spotlight Logo" class="h-32 w-auto object-contain">
+                <p class="font-normal text-sm md:text-base text-white/90 pt-6 leading-relaxed max-w-sm">
+                    Spotlight delivers advanced electrical, solar, and smart charging solutions for modern projects.
+                </p>
+            </div>
+            <!-- Col 2: Contact Us -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <!-- Title -->
+                <div class="flex items-center gap-3">
+                    <div class="h-9 w-9 rounded-full bg-white flex items-center justify-center shrink-0 shadow">
+                        <i class="fa-solid fa-phone text-[#b0085a] text-sm"></i>
+                    </div>
+                    <h3 class="text-xl font-bold tracking-wide">Contact Us</h3>
+                </div>
+                <!-- Info List -->
+                <div class="flex flex-col gap-3 text-sm text-white/90">
+                <div class="flex items-start gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-location-dot mt-1 w-4 text-center"></i>
+                    <div>
+                    <p>Korte Brugstraat</p>
+                    <p>4871 XT Etten-Leur</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-phone-volume w-4 text-center"></i>
+                    <a href="tel:+31622331370" class="hover:underline">M. +31622331370</a>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fa-solid fa-envelope w-4 text-center"></i>
+                    <a href="mailto:info@spotlightelektrotechniek.nl" class="hover:underline">E. info@spotlightelektrotechniek.nl</a>
+                </div>
+                </div>
+                <!-- Button: Get in touch -->
+                <a href="#contact" class="mt-2 inline-flex items-center gap-4 border border-white/40 hover:border-white rounded-full py-2 px-5 transition duration-300 group">
+                <span class="text-sm font-semibold">Get in touch</span>
+                <div class="h-7 w-7 rounded-full bg-white flex items-center justify-center text-[#b0085a] group-hover:translate-x-1 transition-transform">
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </div>
+                </a>
+            </div>
+            <!-- Col 3: Company Links -->
+            <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left gap-5">
+                <!-- Title -->
+                <div class="flex items-center gap-3">
+                <div class="h-9 w-9 rounded-full bg-white flex items-center justify-center shrink-0 shadow">
+                    <i class="fa-solid fa-link text-[#b0085a] text-sm"></i>
+                </div>
+                <h3 class="text-xl font-bold tracking-wide">Company Links</h3>
+                </div>
+                <!-- Links List -->
+                <div class="flex flex-col gap-2.5 text-sm font-medium">
+                <a href="index.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Home</span>
+                </a>
+                <a href="about.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>About us</span>
+                </a>
+                <a href="projects.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="services.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Services</span>
+                </a>
+                <a href="contact.html" class="flex items-center gap-2.5 hover:text-white/80 transition-colors">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <span>Contact</span>
+                </a>
+                </div>
+            </div>
+        </div>
+            <!-- footer bar -->
+            <div class="bg-gradient-to-r from-black/80  to-brand shadow-2xl rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 my-8">
+                <!-- Follow Us -->
+                <div class="flex flex-col items-center md:items-start gap-4 w-full md:w-1/3">
+                    <h4 class="text-lg font-bold">Follow us</h4>
+                    <div class="flex items-center gap-5 text-2xl">
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="hover:scale-110 transition-transform"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            <!-- Opening Hours -->
+            <div class="flex flex-col items-center md:items-start gap-3 w-full md:w-2/3 md:pl-6">
+                <div class="flex items-center gap-3">
+                <div class="h-8 w-8 rounded-full bg-white flex items-center justify-center text-[#b0085a] shadow">
+                    <i class="fa-regular fa-clock text-sm"></i>
+                </div>
+                <h4 class="text-lg font-bold">Opening hours</h4>
+                </div>
+                <p class="text-sm text-white/90">
+                Monday to Friday: <strong class="text-white font-semibold">08:00-17:00</strong>
+                </p>
+            </div>
+        </div>
+            <!-- Copyright & Legal Footer -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/70 border-t border-white/10 pt-6">
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-id-card"></i> Chamber of Commerce: <strong>89118308</strong>
+                    </span>
+                    <span>VAT number: <strong>NL864884217B01</strong></span>
+                </div>
+                <div class="text-center">
+                    Chamber of Commerce:89118308 - Publication rights reserved©
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
